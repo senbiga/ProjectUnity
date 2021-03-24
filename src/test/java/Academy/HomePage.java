@@ -49,7 +49,33 @@ public class HomePage extends base{
 		fp.getEmail().sendKeys("xxx");
 		fp.sendMeInstructions().click();
 		
+		System.out.println("Git repo develop branch code1");
+		System.out.println("Git repo develop branch code2");
+		System.out.println("Git repo develop branch code3");
 		
+		}
+	public void basePageNavigation1(String Username,String Password,String text) throws IOException
+	{
+
+		//one is inheritance
+
+		// creating object to that class and invoke methods of it
+		driver.get(prop.getProperty("url"));
+		LandingPage l=new LandingPage(driver);
+		LoginPage lp=l.getLogin(); //driver.findElement(By.css()
+		lp.getEmail().sendKeys(Username);
+		lp.getPassword().sendKeys(Password);
+
+		log.info(text);
+		
+		lp.getLogin().click();
+		ForgotPassword fp= lp.forgotPassword();
+		fp.getEmail().sendKeys("xxx");
+		fp.sendMeInstructions().click();
+		
+		System.out.println("Git repo develop branch code1");
+		System.out.println("Git repo develop branch code2");
+		System.out.println("Git repo develop branch code3");
 		
 		}
 

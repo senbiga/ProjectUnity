@@ -55,6 +55,27 @@ public void initialize() throws IOException
 	
 		
 		}
+@Test
+	
+	public void validateAppNavBar1() throws IOException
+	{
+
+		//one is inheritance
+		// creating object to that class and invoke methods of it
+		LandingPage l=new LandingPage(driver);
+	
+		//compare the text from the browser with actual text.- Error..
+	    Assert.assertTrue(l.getNavigationBar().isDisplayed());
+	    log.info("Navigation Bar is displayed");
+		 System.out.println("Test completed");
+		 System.out.println("this is for git check");
+		 System.out.println("this for git check=asian guy");
+		 
+	 //   Assert.assertFalse(false);
+		;
+	
+		
+		}
 	
 	@AfterTest
 	public void teardown()

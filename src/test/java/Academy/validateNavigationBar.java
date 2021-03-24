@@ -47,6 +47,8 @@ public void initialize() throws IOException
 	    Assert.assertTrue(l.getNavigationBar().isDisplayed());
 	    log.info("Navigation Bar is displayed");
 		 System.out.println("Test completed");
+		 System.out.println("this is for git check");
+		 
 	 //   Assert.assertFalse(false);
 		;
 	

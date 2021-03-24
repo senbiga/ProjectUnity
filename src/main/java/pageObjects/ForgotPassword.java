@@ -27,11 +27,10 @@ public class ForgotPassword {
 	public WebElement getEmail()
 	{
 		return driver.findElement(email);
-	}
 	
 	public WebElement sendMeInstructions()
 	{
-		driver.findElement(email).findElement(by)
+		driver.findElement(email);
 		return driver.findElement(sendMeInstructions);
 		
 	}

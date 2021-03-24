@@ -48,6 +48,7 @@ public void initialize() throws IOException
 	    log.info("Navigation Bar is displayed");
 		 System.out.println("Test completed");
 		 System.out.println("this is for git check");
+		 System.out.println("this for git check=asian guy");
 		 
 	 //   Assert.assertFalse(false);
 		;
